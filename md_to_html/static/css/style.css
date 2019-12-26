@@ -1,0 +1,120 @@
+html *{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+*, :after, :before{
+    box-sizing: border-box;
+}
+body{
+    font-family: '-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif';
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.65);
+    background: #fff;
+}
+textarea{
+    color: #333;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+input{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #595959;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*===== Layout ====*/
+.md-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.flex-columns{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    border: 1px solid #d9d9d9;
+    margin: 10px;
+}
+.display-html{
+    background-color: #fcfaf2;
+    line-height: 1.75;
+    overflow-y: auto;
+    color: #333;
+    padding: 10px 40px 80px;
+    width: 700px;
+}
+.html-title{
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.html-content{
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+/*===== list =====*/
+.list-container{
+    width: 500px;
+    border-right: 1px solid #d9d9d9;
+    background: #fcfaf2;
+}
+.article-list{
+    border-top: 1px solid #d9d9d9;
+    height: 100%;
+}
+.article-list li{
+    position: relative;
+    height: 90px;
+    color: #595959;
+    background-color: #fff;
+    padding: 15px 10px 15px 60px;
+    box-shadow: 0 0 0 1px #d9d9d9;
+    border-left: 5px solid transparent;
+    line-height: 60px;
+    cursor: pointer;
+}
+.delete-article{
+    display: block;
+    float: right;
+    color: #ec7259;
+}
+.article-list li.active{
+    background-color: #e6e6e6;
+    border-left-color: #ec7259;
+}
+.write-content{
+    flex: 1;
+}
+.article-btn{
+    width: 50%;
+    background: #ccc;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0 10px 10px;
+    cursor: pointer;
+}
+.edit-textarea{
+    border: 1px solid #d9d9d9;
+    margin: 20px 10px;
+    height: 100%;
+    padding: 20px;
+}
+.md-list{
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+}
